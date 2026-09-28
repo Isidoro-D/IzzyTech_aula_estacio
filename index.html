@@ -9,120 +9,185 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>Izzy Tech</h1>
-            <p>Inovação e Tecnologia para o que você <strong>precisar</strong></p>
-            <img src="./assets/images/banner.png" alt="Logo da Izzy Tech">
-            <div class="menu">
-                <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="#">Categorias</a></li>
-                    <li><a href="#">Contato</a></li>
-                    <li><a href="./checkout.html">Carrinho</a></li>
-                </ul>
-            </div>
+    <header class="header">
+        <h1>Izzy Tech</h1>
+        <p>Inovação e Tecnologia para o que você <strong>precisar</strong></p>
+        <img src="./assets/images/banner.png" alt="Logo da Izzy Tech">
+        <nav class="menu">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#">Categorias</a>
+                    <aside>
+                        <ul>
+                            <li><a href="#">Periféricos</a></li>
+                            <li><a href="#">Computadores</a></li>
+                            <li><a href="#">Notebooks</a></li>
+                        </ul>
+                    </aside>
+                </li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="./checkout.html" target="_blank">Carrinho</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main class="content">
+        <div class="about">
+            <h2>Bem-vindo à Izzy Tech!</h2>
+            <p>Oferecemos produtos de alta qualidade para atender às necessidades do seu negócio.</p>
+            <a href="#" class="btn">Saiba Mais</a>
         </div>
 
-        <hr>
-
-        <div class="content">
-            <div class="about">
-                <h2>Bem-vindo à Izzy Tech!</h2>
-                <p>Oferecemos produtos de alta qualidade para atender às necessidades do seu negócio.</p>
-                <a href="#" class="btn">Saiba Mais</a>
+        <div class="services">
+            <h2>Nossos Serviços</h2>
+            <div class="service-item">
+                <h3>Periféricos</h3>
+                <p>Fornecemos uma ampla gama de periféricos de alta qualidade para atender às necessidades do seu
+                    negócio.</p>
             </div>
-
-            <div class="services">
-                <h2>Nossos Serviços</h2>
-                <div class="service-item">
-                    <h3>Periféricos</h3>
-                    <p>Fornecemos uma ampla gama de periféricos de alta qualidade para atender às necessidades do seu
-                        negócio.</p>
-                </div>
-                <div class="service-item">
-                    <h3>Montagem de Computadores</h3>
-                    <p>Oferecemos serviço de montagem de computadores personalizados para atender às necessidades do seu
-                        negócio.</p>
-                </div>
-                <div class="service-item">
-                    <h3>Upgrade de Equipamentos</h3>
-                    <p>Oferecemos serviço de upgrade de equipamentos para manter seu sistema sempre atualizado.</p>
-                </div>
+            <div class="service-item">
+                <h3>Montagem de Computadores</h3>
+                <p>Oferecemos serviço de montagem de computadores personalizados para atender às necessidades do seu
+                    negócio.</p>
             </div>
-
-            <h2>Produtos</h2>
-            <div class="products">
-                <div class="product-item">
-                    <img src="./assets/images/kit_upgrade1.jpg" alt="kit upgrade ryzen 7">
-                    <h3>Kit Upgrade Ryzen 7</h3>
-                    <p>Kit de <i>upgrade</i> para processadores Ryzen 7.</p>
-                    <p><span>R$ 599,90</span> <b>no pix</b> <br> ou R$ 699,90 <b>10x sem juros</b></p>
-                    <a href="#carrinho" class="btn">Comprar</a>
-                </div>
-                <div class="product-item">
-                    <img src="./assets/images/monitor_lg.jpg" alt="Monitor LG 24' IPS 180Hz">
-                    <h3>Monitor LG 24' IPS 180Hz</h3>
-                    <p>Monitor LG 24 polegadas IPS 180Hz 1ms <i>FreeSync</i> e <i>G-Sync</i>.</p>
-                    <p><span>R$ 899,90</span> <b>no pix</b> <br> ou R$ 999,90 <b>10x sem juros</b></p>
-                    <a href="#carrinho" class="btn">Comprar</a>
-                </div>
-                <div class="product-item">
-                    <img src="./assets/images/teclado_mitra_rd.jpg" alt="Teclado Mitra REDRAGON">
-                    <h3>Teclado Mitra REDRAGON</h3>
-                    <p>Teclado mecânico <i>RGB</i> com <i>switches red</i>.</p>
-                    <p><span>R$ 199,90</span> <b>no pix</b> <br> ou R$ 299,90 <b>10x sem juros</b></p>
-                    <a href="#carrinho" class="btn">Comprar</a>
-                </div>
-                <div class="product-item">
-                    <img src="./assets/images/rtx_3060ti.jpg" alt="Placa de Vídeo RTX 3060 ti">
-                    <h3>Placa de Vídeo RTX 3060 ti</h3>
-                    <p>Placa de vídeo RTX 3060 ti com 8GB de memória <i>GDDR6</i>.</p>
-                    <p> <span>R$ 1.299,90</span> <b>no pix</b> <br> ou R$ 1.399,90 <b>10x sem juros</b></p>
-                    <a href="#carrinho" class="btn">Comprar</a>
-                </div>
-
-            </div>
-            <hr>
-
-            <div class="featured-products">
-                <h4>Especificações Técnicas do Produto em Destaque.</h4>
-                <div class="product-item">
-                    <p>A GeForce RTX 3060 Ti é uma placa com 4.864 núcleos CUDA de processamento e que pode atingir
-                        velocidades de 1.410 MHz no clock base ou de até 1.610 MHz em turbo.<br> GPU: GA104 com 4.864 núcleos CUDA, 38 núcleos RT e
-                        152 núcleos Tensor<br> Velocidades: 1.410 MHz em clock base,<br> turbo de até 1.610 MHz<br> Memória RAM:
-                            8 GB de GDDR6 a 14 Gb/s<br> Interface de memória: 256 bits<br> Largura de banda: 448 GB/s<br> TBP: 200
-                            Watts, requer fonte de 60 Watts <br> <em>Em nossa loja além
-                            da garantia de 2 anos, oferecemos suporte técnico especializado para garantir o melhor
-                            desempenho do seu equipamento.</em></p>
-                </div>
-
-            </div>
-
-            <div class="contact">
-                <h2>Entre em Contato</h2>
-                <form action="#" method="post">
-                    <label for="name">Nome:</label>
-                    <input type="text" id="name" name="name" required>
-
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-
-                    <label for="message">Mensagem:</label>
-                    <textarea id="message" name="message" required></textarea>
-
-                    <button type="submit">Enviar</button>
-                </form>
+            <div class="service-item">
+                <h3>Upgrade de Equipamentos</h3>
+                <p>Oferecemos serviço de upgrade de equipamentos para manter seu sistema sempre atualizado.</p>
             </div>
         </div>
+    </main>
 
-        <footer>
-            <h6>Políticas e Atendimento.</h6>
-            <div class="social-icons">
-                <a href="#"><img src="./assets/images/instagram.png" alt="Instagram">Nos siga no Instagram</a>
-            </div>
-            <p>&copy; 2026 Izzy Tech CNPJ: 77.777.777/0001-70. Todos os direitos reservados.</p>
-        </footer>
+    <section class="product-content">
+        <h2>Produtos</h2>
+        <div class="products">
+            <article class="product-item">
+                <img src="./assets/images/kit_upgrade1.jpg" alt="kit upgrade ryzen 7">
+                <h3>Kit Upgrade Ryzen 7</h3>
+                <p>Kit de <i>upgrade</i> para processadores Ryzen 7.</p>
+                <p><span>R$ 599,90</span> <b>no pix</b> <br> ou R$ 699,90 <b>10x sem juros</b></p>
+                <a href="#carrinho" class="btn">Comprar</a>
+            </article>
+            <article class="product-item">
+                <img src="./assets/images/monitor_lg.jpg" alt="Monitor LG 24' IPS 180Hz">
+                <h3>Monitor LG 24' IPS 180Hz</h3>
+                <p>Monitor LG 24 polegadas IPS 180Hz 1ms <i>FreeSync</i> e <i>G-Sync</i>.</p>
+                <p><span>R$ 899,90</span> <b>no pix</b> <br> ou R$ 999,90 <b>10x sem juros</b></p>
+                <a href="#carrinho" class="btn">Comprar</a>
+            </article>
+            <article class="product-item">
+                <img src="./assets/images/teclado_mitra_rd.jpg" alt="Teclado Mitra REDRAGON">
+                <h3>Teclado Mitra REDRAGON</h3>
+                <p>Teclado mecânico <i>RGB</i> com <i>switches red</i>.</p>
+                <p><span>R$ 199,90</span> <b>no pix</b> <br> ou R$ 299,90 <b>10x sem juros</b></p>
+                <a href="#carrinho" class="btn">Comprar</a>
+            </article>
+            <article class="product-item">
+                <img src="./assets/images/rtx_3060ti.jpg" alt="Placa de Vídeo RTX 3060 ti">
+                <h3>Placa de Vídeo RTX 3060 ti</h3>
+                <p>Placa de vídeo RTX 3060 ti com 8GB de memória <i>GDDR6</i>.</p>
+                <p> <span>R$ 1.299,90</span> <b>no pix</b> <br> ou R$ 1.399,90 <b>10x sem juros</b></p>
+                <a href="#carrinho" class="btn">Comprar</a>
+            </article>
+        </div>
+    </section>
+
+    <section class="comparative">
+        <h2>Comparativo de Produtos</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Modelo</th>
+                    <th>Conectividade</th>
+                    <th>Peso</th>
+                    <th>Garantia</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Kit Upgrade Ryzen 7</td>
+                    <td>USB 3.0, HDMI</td>
+                    <td>1,2 kg</td>
+                    <td>2 anos</td>
+                </tr>
+                <tr>
+                    <td>Monitor LG 24' IPS 180Hz</td>
+                    <td>HDMI, DisplayPort</td>
+                    <td>3,5 kg</td>
+                    <td>3 anos</td>
+                </tr>
+                <tr>
+                    <td>Teclado Mitra REDRAGON</td>
+                    <td>USB</td>
+                    <td>0,8 kg</td>
+                    <td>1 ano</td>
+                </tr>
+                <tr>
+                    <td>Placa de Vídeo RTX 3060 ti</td>
+                    <td>PCIe 4.0</td>
+                    <td>1,5 kg</td>
+                    <td>2 anos</td>
+                </tr>
+        </table>
+    </section>
+    <hr>
+
+    <div class="featured-products">
+        <h4>Especificações Técnicas do Produto em Destaque.</h4>
+
+        <video width="400" height="300" controls>
+            <source src="./assets/videos/3060ti.mp4" type="video/mp4">
+            <source src="./assets/videos/3060ti.webm" type="video/webm">
+
+            Desculpe, seu navegador não suporta vídeos incorporados, mas não se preocupe,
+            você pode fazer o
+            <a href="./assets/videos/3060ti.mp4" download="3060ti.mp4">
+                download do MP4
+            </a>
+        </video>
+
+        <article class="product-item">
+            <p>A GeForce RTX 3060 Ti é uma placa com 4.864 núcleos CUDA de processamento e que pode atingir
+                velocidades de 1.410 MHz no clock base ou de até 1.610 MHz em turbo.<br> GPU: GA104 com 4.864
+                núcleos CUDA, 38 núcleos RT e
+                152 núcleos Tensor<br> Velocidades: 1.410 MHz em clock base,<br> turbo de até 1.610 MHz<br> Memória
+                RAM:
+                8 GB de GDDR6 a 14 Gb/s<br> Interface de memória: 256 bits<br> Largura de banda: 448 GB/s<br> TBP:
+                200
+                Watts, requer fonte de 60 Watts <br> <em>Em nossa loja além
+                    da garantia de 2 anos, oferecemos suporte técnico especializado para garantir o melhor
+                    desempenho do seu equipamento.</em></p>
+        </article>
+        <aside>
+            <p>Mesmo chip da RTX 3070: Ela compartilha o mesmo núcleo de processamento (arquitetura Ampere, chip GA104),
+                mas com uma quantidade menor de núcleos CUDA ativos (4.864 contra 5.888 da 3070)</p>
+        </aside>
+    </div>
+
+    <div class="contact">
+        <h2>Entre em Contato</h2>
+        <form action="#" method="post">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <footer>
+        <h6>Políticas e Atendimento.</h6>
+        <div class="social-icons">
+            <a href="#"><img src="./assets/images/instagram.png" alt="Instagram">Nos siga no Instagram</a>
+        </div>
+        <p>&copy; 2026 Izzy Tech CNPJ: 77.777.777/0001-70. Todos os direitos reservados.</p>
+    </footer>
 </body>
 
 </html>
